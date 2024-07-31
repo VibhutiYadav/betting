@@ -1,1 +1,2 @@
-final String appLogo = 'assets/logo.png';
+
+final String appLogo = 'assets/images/Splash.png';

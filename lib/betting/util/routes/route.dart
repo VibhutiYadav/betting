@@ -1,29 +1,33 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import '../../features/onboarding/bindings/on_boarding_binding.dart';
+import '../../features/onboarding/views/on_boarding_view.dart';
+import '../../features/splash/splash_binding.dart';
+import '../../features/splash/splash_view.dart';
 
 class AppRoutes {
   // Define route names as static constants
   static const String splash = '/splash';
-  static const String walkthrough = '/walkthrough';
+  static const String onboarding = '/onboarding';
   static const String signup = '/signup';
-  static const String login = '/login';
-  static const String otp = '/otp';
-  static const String otpverified = '/otpverified';
-  static const String home = '/home';
-  static const String notification = '/notification';
+  // static const String login = '/login';
+  // static const String otp = '/otp';
+  // static const String otpverified = '/otpverified';
+  // static const String home = '/home';
+  // static const String notification = '/notification';
 
 
-  // Define a list of pages and their bindingsdddddd
+  // Define a list of pages and their bindings
   static final List<GetPage> pages = [
-    // GetPage(
-    //   name: splash,
-    //   page: () => SplashScreen(),
-    //   binding: SplashBinding(),
-    // ),
-    // GetPage(
-    //   name: walkthrough,
-    //   page: () => WalkThroughScreen(),
-    //   binding: WalkthroughBinding(),
-    // ),
+    GetPage(
+      name: splash,
+      page: () => SplashView(),
+      binding: SplashBinding(),
+    ),
+    GetPage(
+      name: onboarding,
+      page: () => OnBoardingView(),
+      binding: OnBoardingBinding(),
+    ),
     // GetPage(
     //   name: signup,
     //   page: () => SignupScreen(),
