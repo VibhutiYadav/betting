@@ -1,6 +1,5 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import '../../features/SignIn/bindings/sign_in_binding.dart';
-import '../../features/SignIn/views/sign_in_view.dart';
+import '../../features/dashboard/home.dart';
 import '../../features/onboarding/bindings/on_boarding_binding.dart';
 import '../../features/onboarding/views/on_boarding_view.dart';
 import '../../features/splash/splash_binding.dart';
@@ -11,10 +10,10 @@ class AppRoutes {
   static const String splash = '/splash';
   static const String onboarding = '/onboarding';
   static const String signup = '/signup';
-  static const String signin = '/signin';
+  // static const String login = '/login';
   // static const String otp = '/otp';
   // static const String otpverified = '/otpverified';
-  // static const String home = '/home';
+  static const String home = '/home';
   // static const String notification = '/notification';
 
 
@@ -35,11 +34,11 @@ class AppRoutes {
     //   page: () => SignupScreen(),
     //   binding: SignupBinding(),
     // ),
-    GetPage(
-      name: signin,
-      page: () => SignInView(),
-      binding: SignInBinding(),
-    ),
+    // GetPage(
+    //   name: login,
+    //   page: () => LoginScreen(),
+    //   binding: LoginBinding(),
+    // ),
     // GetPage(
     //   name: otp,
     //   page: () => OTPScreen(),
@@ -48,11 +47,11 @@ class AppRoutes {
     //   name: otpverified,
     //   page: () => OTPVerifiedScreen(),
     // ),
-    // GetPage(
-    //   name: home,
-    //   page: () => HomeScreen(),
-    //   binding: HomeBinding(),
-    // ),
+    GetPage(
+      name: home,
+      page: () => HomeScreen(),
+      // binding: HomeBinding(),
+    ),
     // GetPage(
     //   name: notification,
     //   page: () => Notificationscreen(),
